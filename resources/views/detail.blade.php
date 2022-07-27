@@ -31,7 +31,11 @@
     
             </div>
             <div class="card-body">
-                <button type="button" class="col-sm-6  btn btn-outline-primary">Add to Card</button>  
+               <form action="/add_to_cart" method="POST">
+                     @csrf
+                    <input type="hidden" name="product_id" value={{$product['id']}}>
+                    <button class="col-sm-6  btn btn-outline-primary">Add to Card</button> 
+               </form> 
                 <button type="button" class="mt-2 col-sm-6  btn btn-primary">Buy now</button>  
             </div>
    
