@@ -1,6 +1,6 @@
 @extends('master')
-@section("login")
-<div class="container my-5 pt-5">      
+@section("content")
+<div class="container my-5 pt-5 customer-login">      
             <div class="col-10 col-md-6 col-lg-4 m-auto">
                 <div class="card border-5px shadow" >
                     <div class="card-body">
